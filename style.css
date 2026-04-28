@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+body {
+    font-family: "Google Sans", sans-serif;
+    background: rgb(249, 249, 228);
+    color: rgb(21, 20, 20);
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.wrapper {
+
+    text-align: center;
+    max-width: 50%;
+    max-height: max-content;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid rgb(198, 195, 195);
+    border-radius: 15px;
+    background: rgb(235, 235, 237);
+    box-shadow: 5px 5px 10px rgba(21, 21, 21, 0.3);
+    
+}
+
+label {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.radio-wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.radio-wrapper label {
+    display: flex;
+    align-items: center;
+    
+}
+
+.radio-wrapper input[type="radio"] {
+    width: 18px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#textbox-height {
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    border: 3px solid rgba(24, 24, 24, 0.3);
+    border-radius: 5px;
+    margin-bottom: 12px;
+
+}
+
+#textbox-weight {
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    border: 3px solid rgba(24, 24, 24, 0.3);
+    border-radius: 5px;
+    margin-bottom: 12px;
+
+}
+
+
+
+button {
+    margin-top: 12px;
+    font-family: inherit;
+    background: rgb(239, 171, 45);
+    color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: rgb(247, 163, 9);
+    color: rgba(24, 24, 24);
+
+}
+
+button:active {
+    background: rgb(239, 189, 96);
+}
+
+#result {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#bmi-category {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: 700;
+    color: rgb(21, 20, 20);
+}
