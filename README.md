@@ -28,7 +28,7 @@ Technologies Used
 
 ---
 
-## 🔗 Live Demo
+Live Demo
 
 https://bmi-calculator-harikrishna.netlify.app/
 
