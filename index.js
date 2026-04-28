@@ -36,9 +36,9 @@ if(bmi < 18.5) {
 }
 
 if(genderMale.checked) {
-    resultEl.textContent = `Result: Hey bro your BMI is: ${bmi}`;
+    resultEl.textContent = `Result: Your BMI is: ${bmi}`;
 } else if(genderFemale.checked) {
-    resultEl.textContent = `Result: Hey broette your BMI is: ${bmi}`;
+    resultEl.textContent = `Result: Your BMI is: ${bmi}`;
 } else {
     resultEl.textContent = `Select a gender!`
     bmiCategoryEl.textContent = "";
