@@ -20,6 +20,10 @@ function bmiCalculation() {
         resultEl.textContent = `Please enter valid height and weight!`;
         bmiCategoryEl.textContent = "";
         return;
+    } else if(isNaN(height) || isNaN(weight)) {
+        resultEl.textContent = `Please enter valid height and weight!`;
+        bmiCategoryEl.textContent = "";
+        return;
     }
 
     let bmi = weight / (height ** 2);
