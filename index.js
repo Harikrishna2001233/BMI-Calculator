@@ -16,15 +16,11 @@ function bmiCalculation() {
     height = Number(textBoxHeightEl.value)/100;
     weight = Number(textBoxWeightEl.value);
 
-    if(height <= 0 || weight <= 0) {
+    if(height <= 0 || weight <= 0 || isNaN(height) || isNaN(weight)) {
         resultEl.textContent = `Please enter valid height and weight!`;
         bmiCategoryEl.textContent = "";
         return;
-    } else if(isNaN(height) || isNaN(weight)) {
-        resultEl.textContent = `Please enter valid height and weight!`;
-        bmiCategoryEl.textContent = "";
-        return;
-    }
+    } 
 
     let bmi = weight / (height ** 2);
     bmi = Number(bmi.toFixed(4));
